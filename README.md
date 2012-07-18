@@ -1,4 +1,4 @@
-Este es un paquete de [Sublime Text][sublime] el cual incluye snippets, fragmentos de codigo para el uso del tipo de documentos a usar
+Este es un paquete de [Sublime Text][sublime] el cual incluye snippets, fragmentos de codigo para el uso del tipo de documentos html a usar
 
 ## Installation ##
 Clona éste repositorio al directorio de paquetes de sublime text
