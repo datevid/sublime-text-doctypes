@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+public function __construct(\$id,\$module=null){
+	parent::__construct(\$id, \$module);
+
+	if(!Funciones::hasCookie("countryName")){
+
+		\$datos=Funciones::getDatosPorIp(Funciones::getIp());
+		Funciones::setCookies(\$datos);
+		//echo "no tiene pais en sus cookies";
+	}
+
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>__construct Yii</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+$string = file_get_contents("http://api.ipinfodb.com/v3/ip-city/?key=a0fe993949f6914161ff3c07d848c0c7e7771b5d6005b6b311bae42b6f3a26e4&ip=201.240.69.120&format=json");
+$datos = json_decode($string, true);
+return $datos;
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>json-php-getjson</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

@@ -1,0 +1,41 @@
+<snippet>
+	<content><![CDATA[
+<table summary="Análisis de ventas anuales">
+	<caption>Análisis de ventas anuales</caption>
+	<thead>
+		<tr>
+			<th scope="col">ID</th>
+			<th scope="col">Producto A</th>
+			<th scope="col">Producto B</th>
+			<th scope="col">Producto C</th>
+			<th scope="col">Producto D</th>
+		</tr>
+	</thead>
+
+	<tfoot>
+		<tr>
+			<th rowspan="2" scope="col">---</th>
+			<th scope="col">TOTAL A</th>
+			<th scope="col">TOTAL B</th>
+			<th scope="col">TOTAL C</th>
+			<th scope="col">TOTAL D</th>
+
+		</tr>
+	</tfoot>
+
+	<tbody>
+		<tr>
+			 <td>1</td>
+			 <td>item a</td>
+			 <td>item b</td>
+			 <td>item c</td>
+			 <td>item d</td>
+		</tr>
+	</tbody>
+</table>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>table-example</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+<ul class="acordion">
+			<li><a href="#">A Website #1</a></li>
+			<li><a href="#">A Website #2</a></li>
+			<li><a href="#">A Link #1</a></li>
+			<li><a href="#">A Link #2</a></li>
+			<li><a href="#">A Website #3</a></li>
+			<li><a href="#">A Website #4</a></li>
+			<li><a href="#">A Link #3</a></li>
+			<li><a href="#">A Link #4</a></li>
+		</ul>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>example-li2</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

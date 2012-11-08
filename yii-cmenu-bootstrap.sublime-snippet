@@ -1,0 +1,41 @@
+<snippet>
+	<content><![CDATA[
+<?php
+	#AUN NO ESTOY USANDOLO
+	$this->widget('zii.widgets.CMenu',array(
+							'items'=>array(
+								'encodeLabel'=>false,
+								array('label'=>'algo aqui', 'url'=>'#contenido'),
+								array('label'=>'Home', 'url'=>array('/site/index')),
+								array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
+								array('label'=>'Contact', 'url'=>array('/site/contact')),
+								array('label'=>'Usuario', 'url'=>'#',
+									//'itemTemplate'=>'{menu}<b class="caret">ab</b>',
+									'template'=>'{menu}<b class="caret"></b>',
+									//'linkLabelWrapper'=>'<b class="caret"></b>',
+									//'submenuOptions'=>array('id'=>'myId_a','class'=>'menuitems'),
+									'submenuOptions'=>array('id'=>'myId_a','class'=>'dropdown-menu'),
+									'linkOptions'=>array('class'=>'dropdown-toggle', 'data-toggle'=>'dropdown',),
+									'itemOptions'=>array('class'=>'dropdown'),
+									'encodeLabel'=>false,
+
+									'items'=>array(
+
+										array('label'=>'Nuevo Usuario', 'url'=>array('user/create', 'tag'=>'new'), 'htmlOptions'=>array('class'=>'dropdown-toggle')),
+										array('label'=>'Administrar', 'url'=>array('user/admin', 'tag'=>'popular'),),
+
+									),
+								),
+								array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
+								array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
+							),
+							'id'=>'navegacionDropDown',
+							'htmlOptions'=>array("class"=>'nav'),
+
+						)); ?>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>Yii-Cmenu-Bootstrarp</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

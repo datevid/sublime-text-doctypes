@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+\$.getJSON('data11.json', function(data) \{
+		console.log("cargado datos correctamente")
+		//loadScript();
+\})
+.success(function() \{ console.log("second success"); \})
+.error(function() \{ console.log("error"); \})
+.complete(function() \{ console.log("complete"); \});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>getJSON</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
